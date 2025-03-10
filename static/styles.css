@@ -1,0 +1,86 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    font-size: 28px;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Left: Skills Section */
+.skills-section {
+    width: 30%;
+    background-color: #ffcc00;
+    padding: 20px;
+    border-radius: 10px;
+    color: #333;
+    text-align: left;
+}
+
+.skills-section h2 {
+    text-align: center;
+}
+
+.skills-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-section li {
+    background: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Right: Job Listings */
+.jobs-section {
+    width: 65%;
+    text-align: left;
+}
+
+.job-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.job-card:hover {
+    transform: scale(1.02);
+}
+
+.job-card h3 {
+    color: #007bff;
+}
+
+.apply-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.apply-btn:hover {
+    background: #218838;
+}

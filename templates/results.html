@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Matches</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Resume AI Job Finder</h1>
+    
+    <div class="container">
+        <!-- Left: Skills -->
+        <div class="skills-section">
+            <h2>🔍 Extracted Skills</h2>
+            <ul>
+                {% for skill in skills %}
+                <li>{{ skill }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!-- Right: Job Recommendations -->
+        <div class="jobs-section">
+            <h2>🏆 Top Job Recommendations</h2>
+            {% for job in jobs %}
+            <div class="job-card">
+                <h3>{{ job["job_title"] }} at {{ job["company_name"] }}</h3>
+                <p><strong>📍 Location:</strong> {{ job["location"] }}</p>
+                <p><strong>💼 Experience:</strong> {{ job["experience"] }}</p>
+                <p><strong>💰 Salary:</strong> {{ job["salary"] }}</p>
+                <p><strong>🛠️ Skills:</strong> {{ job["skills"] }}</p>
+                <p>📌 {{ job["description"] }}</p>
+                <a href="{{ job['apply_link'] }}" target="_blank" class="apply-btn">🚀 Apply Now</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
