@@ -34,7 +34,7 @@ Resume Match AI Job Finder is an AI-powered application that helps job seekers f
 ## 🚀 Setup & Installation
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-repo/resume-ai-job-finder.git
+   git clone https://github.com/TejaswiSriram/RESUME-AI-JOB-FINDER
    cd resume-ai-job-finder
    ```
 2. **Install dependencies**
